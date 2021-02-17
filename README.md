@@ -1,4 +1,6 @@
- Org Setup
+# Codebase for a B2B Solution Architect Learning Lab 
+ 
+## Org Setup
 
 Sign up for a CPQ org
 
@@ -13,7 +15,7 @@ Even if you've recently signed up for a special CPQ-enabled Developer Edition or
 5. Complete your registration by setting your password and challenge question. *Tip*: Write down your username, password, and login URL for easy access later.
 6. You are logged in to your Developer Edition.
 
-Enable Field Service
+## Enable Field Service
 
 Before you can start working with Field Service, you must enable it.
 
@@ -23,7 +25,7 @@ Before you can start working with Field Service, you must enable it.
 
 Look at all the shiny new settings! For now, leave those settings alone—you can adjust them all you want after you finish the project.
 
-Install the FSL Managed Package
+## Install the FSL Managed Package
 
 Now you’re ready to install the goodness of the Field Service Managed package right into your Trailhead playground. Salesforce regularly releases new versions of the Field Service managed package as part of their standard Spring, Summer, and Winter releases so it will be up-to-date.
 
