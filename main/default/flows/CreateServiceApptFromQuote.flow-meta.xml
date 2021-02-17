@@ -132,6 +132,7 @@
             <label>QuoteAccepted</label>
         </rules>
     </decisions>
+    <description>The purpose of this Flow is to create Work Order and Service Appointment records once a Quote is Accepted and is the Primary and the Opportunity is Won. A key driver for this Flow is once that Quote is accepted the expectations are the Work Orders and Service Appointments are mocked up for the Field Service or Service team to setup the service or installation expectations.</description>
     <interviewLabel>CreateServiceApptFromQuote {!$Flow.CurrentDateTime}</interviewLabel>
     <label>CreateWorkOrderAndServiceApptFromQuote</label>
     <processMetadataValues>
@@ -242,7 +243,7 @@
             <targetReference>IsQuoteAccepted</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
     <variables>
         <name>AssociatedQuote</name>
         <dataType>SObject</dataType>
