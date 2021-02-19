@@ -40,6 +40,7 @@
             <targetReference>AddToCollection</targetReference>
         </connector>
     </assignments>
+    <description>The purpose of this Flow is to update Assets associated to a Work Order on an Account to Installed once a Work Order is completed. The key driver around this is to setup service contracts and renewal contracts around those Assets.</description>
     <interviewLabel>UpdateAssetsOnWOCompletion {!$Flow.CurrentDateTime}</interviewLabel>
     <label>UpdateAssetsOnWOCompletion</label>
     <loops>
@@ -107,7 +108,7 @@
     </recordUpdates>
     <start>
         <locationX>46</locationX>
-        <locationY>67</locationY>
+        <locationY>68</locationY>
         <connector>
             <targetReference>GetWOLI</targetReference>
         </connector>

@@ -54,6 +54,7 @@
             <targetReference>AddToCollection</targetReference>
         </connector>
     </assignments>
+    <description>The purpose of this Flow is to create Work Order Line Items from a Selected Quote associated the Quote this Screen Flow is on. In other flows we created a Work Order without any Work Order Line Items. The key driver of this flow is to select an existing Work Order that is associated to this Quotes Account Record and convert the Quote Line Items to the Work Order Line Items. In order for this flow to work there must be an associated Pricebook to the Work Order. When creating the Work Order Line Items the Product field is READ ONLY, it is populated once the Pricebook Entry is associated. This is why a Pricebook is required on the Work Order.</description>
     <dynamicChoiceSets>
         <name>Work_Order_Options</name>
         <dataType>String</dataType>
@@ -81,7 +82,7 @@
         <valueField>Id</valueField>
     </dynamicChoiceSets>
     <interviewLabel>CreateWOLIFromQuote {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>CreateWOLIFromQuote</label>
+    <label>Create WOLIs from Quote</label>
     <loops>
         <name>LoopQuoteItems</name>
         <label>LoopQuoteItems</label>
@@ -118,8 +119,8 @@
     <recordCreates>
         <name>Create_WOLI_Records</name>
         <label>Create WOLI Records</label>
-        <locationX>750</locationX>
-        <locationY>603</locationY>
+        <locationX>656</locationX>
+        <locationY>621</locationY>
         <connector>
             <targetReference>WOLI_Created</targetReference>
         </connector>
@@ -228,8 +229,8 @@
     <screens>
         <name>WOLI_Created</name>
         <label>WOLI Created</label>
-        <locationX>592</locationX>
-        <locationY>603</locationY>
+        <locationX>498</locationX>
+        <locationY>621</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -248,7 +249,7 @@
             <targetReference>Create_WOLI_from_Quote</targetReference>
         </connector>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
     <variables>
         <name>AccountId</name>
         <dataType>String</dataType>

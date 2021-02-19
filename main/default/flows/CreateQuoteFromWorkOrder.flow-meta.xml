@@ -142,13 +142,14 @@
             <targetReference>DefineQuoteLineCollection</targetReference>
         </connector>
     </assignments>
+    <description>The purpose of this Flow is to Create Quote and Opportunity records from the Work Order this Screen Flow is associated with. the key driver behind this Flow is a particular Work Order could be selected for Renewal so a Renewal Quote And Opportunity are created with necessary Quote Line Items and Opportunity Line Items. Sales Teams can, from here, now modify the Quote and Opportunity within the terms of the Sales Process.</description>
     <formulas>
         <name>CloseDateTodayAnd30</name>
         <dataType>Date</dataType>
         <expression>{!$Flow.CurrentDate}+30</expression>
     </formulas>
     <interviewLabel>CreateQuoteFromWorkOrder {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>CreateQuoteFromWorkOrder</label>
+    <label>Create Quote And Opportunity From Work Order</label>
     <loops>
         <name>Loop_Quote_Line_Items</name>
         <label>Loop Quote Line Items</label>
@@ -373,7 +374,7 @@
         </connector>
         <fields>
             <name>CreateQuoteFromWOText</name>
-            <fieldText>&lt;p&gt;Create A New Quote From This Completed Work Order&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;This Screen Flow on a Work Order will do the following:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Create a new Opportunity record associated to the completed Work Order&lt;/li&gt;&lt;li&gt;Create a new Quote record of type Renewal &lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;associated to the completed Work Order&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Create Quote Line Items associated to the Work Order Line Items&lt;/li&gt;&lt;li&gt;Create Opportunity Line Items associated to the Work Order Line items&lt;/li&gt;&lt;/ul&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <showFooter>true</showFooter>
