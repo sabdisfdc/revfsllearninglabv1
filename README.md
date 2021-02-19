@@ -1,5 +1,10 @@
 # Codebase for a B2B Solution Architect Learning Lab 
 
+## B2B Solution Architect Info
+
+Engage in the B2B Solution Architect Curriculum in Partner Learning Camp today: sfdc.co/B2BSolutionArchitectCurriculum-PLC.
+![Image](https://lh5.googleusercontent.com/ryddi_vuksjougLsRsh8zS8N-ILHEeEAU6W3gW50HxmhmDShTjRzMJQM335FEeKTTHghz-8NCSSZtlbu8KpxpBY95TNMGNqlcdGhdRmHJyRWISZQn28lf4MIrr2KnQ2Sig9XPNsP)
+
 ## Repo Inventory
 * CreateAssetsFromQuote.flow - The purpose of this Flow is to create Assets from Products defined on a Closed Quote. A key driver for this Flow is that once Products are sold they need to be tracked within the Service and Renewal lifecycle as well. Generating Products as Assets allows for multiple use cases around Asset Lifecycle Management to be engaged on. For more on the applicability of this Flow check out the Asset Lifecycle Management on the B2B Solution Architect Curriculum in either PLC or ACT.
 * CreateMaintenancePlansAndContracts.flow - In this flow we will not be creating Service Contract Line Items. Why is because the Products specified on your Quote may not constitute “Service” level support but all those products would be within the purview of a Maintenance Plan. If you *do* want to create Service Contracts from Assets there is the added wrinkle of Pricebook Entries. Pricebook Entries are not assigned to Assets but Service Contract Line Items also require Pricebook Entries. 
