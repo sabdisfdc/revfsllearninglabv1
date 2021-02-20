@@ -2,7 +2,11 @@
 
 ## B2B Solution Architect Info
 
-Engage in the B2B Solution Architect Curriculum in Partner Learning Camp today: sfdc.co/B2BSolutionArchitectCurriculum-PLC.
+Engage in the B2B Solution Architect Curriculum in Partner Learning Camp today: 
+
+sfdc.co/B2BSolutionArchitectCurriculum-PLC
+
+
 ![Image](https://lh5.googleusercontent.com/ryddi_vuksjougLsRsh8zS8N-ILHEeEAU6W3gW50HxmhmDShTjRzMJQM335FEeKTTHghz-8NCSSZtlbu8KpxpBY95TNMGNqlcdGhdRmHJyRWISZQn28lf4MIrr2KnQ2Sig9XPNsP)
 
 ## Repo Inventory
