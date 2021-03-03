@@ -1,13 +1,17 @@
 # Codebase for a B2B Solution Architect Learning Lab 
 
-## B2B Solution Architect Info
+The codebase you find here is related to a Learning Lab created by the B2B Solution Architect Program. The codebase is meant for education purposes and is not built for purposes of production. 
 
-Engage in the B2B Solution Architect Curriculum in Partner Learning Camp today: 
+Feel free to engage in the Learning Lab or simply take the repo here and work at your own pace. You will find videos related to the lab at our Video hub [here](https://b2bsa.hubs.vidyard.com/). 
 
-https://sfdc.co/B2BSolutionArchitectCurriculum-PLC
+## Learning Lab Courses
 
+To fully engage in the Learning Lab or at least understand the context of this codebase we recommend taking the following courses in Partner Learning Camp:
+* [Going Seamlessly from Configuration to Installation](https://sfdc.co/PLC-GoingSeamlessly)
+* [Tracking Customer Field Service Lifecycle](https://sfdc.co/PLC-CustFieldServiceLifecycle)
+* [Multi-Cloud Asset Lifecycle Management](https://sfdc.co/PLC-AssetLifecycle)
+* [Proactive Service For Your Products](https://sfdc.co/PLC-ProactiveServiceProducts)
 
-![Image](https://lh5.googleusercontent.com/ryddi_vuksjougLsRsh8zS8N-ILHEeEAU6W3gW50HxmhmDShTjRzMJQM335FEeKTTHghz-8NCSSZtlbu8KpxpBY95TNMGNqlcdGhdRmHJyRWISZQn28lf4MIrr2KnQ2Sig9XPNsP)
 
 ## Repo Inventory
 * CreateAssetsFromQuote.flow - The purpose of this Flow is to create Assets from Products defined on a Closed Quote. A key driver for this Flow is that once Products are sold they need to be tracked within the Service and Renewal lifecycle as well. Generating Products as Assets allows for multiple use cases around Asset Lifecycle Management to be engaged on. For more on the applicability of this Flow check out the Asset Lifecycle Management on the B2B Solution Architect Curriculum in either PLC or ACT.
