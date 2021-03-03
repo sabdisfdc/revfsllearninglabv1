@@ -1,4 +1,4 @@
-# Codebase for a B2B Solution Architect Learning Lab 
+# Codebase for the Selling Products to Servicing Assets And Back Again Learning Lab 
 
 The codebase you find here is related to a Learning Lab created by the B2B Solution Architect Program. The codebase is meant for education purposes and is not built for purposes of production. 
 
