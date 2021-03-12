@@ -1,6 +1,12 @@
 # Codebase for the Selling Products to Servicing Assets And Back Again Learning Lab 
 
-The codebase you find here is related to a Learning Lab created by the B2B Solution Architect Program. The codebase is meant for education purposes and is not built for purposes of production. 
+The codebase you find here is related to a Learning Lab created by the B2B Solution Architect Program. The codebase is meant for education purposes and is not built for purposes of production.
+
+### Note
+
+You will see a file within the repository called _config.yml. Its purpose is to create the Github Page you see based on the Readme.md. To ignore it within your pulls do the following:
+* Add _config.yml to your .gitignore file
+* Add **/_config.yml to your .forceignore file
 
 Feel free to engage in the Learning Lab or simply take the repo here and work at your own pace. You will find videos related to the lab at our Video hub [here](https://b2bsa.hubs.vidyard.com/). 
 
