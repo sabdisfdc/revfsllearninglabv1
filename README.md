@@ -8,6 +8,8 @@ You will see a file within the repository called _config.yml. Its purpose is to 
 * Add _config.yml to your .gitignore file
 * Add **/_config.yml to your .forceignore file
 
+## Learning Lab Videos
+
 Feel free to engage in the Learning Lab or simply take the repo here and work at your own pace. You will find videos related to the lab at our Video hub [here](https://b2bsa.hubs.vidyard.com/). 
 
 ## Learning Lab Courses
