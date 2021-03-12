@@ -134,7 +134,7 @@
     </decisions>
     <description>The purpose of this Flow is to create Work Order and Service Appointment records once a Quote is Accepted and is the Primary and the Opportunity is Won. A key driver for this Flow is once that Quote is accepted the expectations are the Work Orders and Service Appointments are mocked up for the Field Service or Service team to setup the service or installation expectations.</description>
     <interviewLabel>CreateServiceApptFromQuote {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>Create Work Order and Service Appointment From a Quote</label>
+    <label>CreateWorkOrderAndServiceApptFromQuote</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -174,6 +174,19 @@
         </connector>
         <inputReference>ServiceAppt</inputReference>
     </recordCreates>
+    <recordLookups>
+        <name>GetQuoteRecord</name>
+        <label>GetQuoteRecord</label>
+        <locationX>571</locationX>
+        <locationY>303</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>CreateWorkOrderFromQuote</targetReference>
+        </connector>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>SBQQ__Quote__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
     <screens>
         <name>ServiceApptAndWorkOrderCreated</name>
         <label>ServiceApptAndWorkOrderCreated</label>
@@ -193,13 +206,13 @@
     <screens>
         <name>Set_Service_Appt_Date</name>
         <label>Set Service Appt Date</label>
-        <locationX>463</locationX>
-        <locationY>167</locationY>
+        <locationX>403</locationX>
+        <locationY>261</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
         <connector>
-            <targetReference>CreateWorkOrderFromQuote</targetReference>
+            <targetReference>GetQuoteRecord</targetReference>
         </connector>
         <fields>
             <name>DisplayTextForServiceAppt</name>

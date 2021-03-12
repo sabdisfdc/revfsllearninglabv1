@@ -4,8 +4,8 @@
     <assignments>
         <name>CreateServiceApptFromWO</name>
         <label>CreateServiceApptFromWO</label>
-        <locationX>592</locationX>
-        <locationY>259</locationY>
+        <locationX>816</locationX>
+        <locationY>266</locationY>
         <assignmentItems>
             <assignToReference>ServiceAppt.ParentRecordId</assignToReference>
             <operator>Assign</operator>
@@ -48,8 +48,8 @@
     <assignments>
         <name>CreateWorkOrderFromOrder</name>
         <label>CreateWorkOrderFromOrder</label>
-        <locationX>805</locationX>
-        <locationY>72</locationY>
+        <locationX>596</locationX>
+        <locationY>66</locationY>
         <assignmentItems>
             <assignToReference>WorkOrderRecord.Status</assignToReference>
             <operator>Assign</operator>
@@ -99,8 +99,8 @@
     <decisions>
         <name>IsOrderActivated</name>
         <label>IsOrderActivated</label>
-        <locationX>406</locationX>
-        <locationY>70</locationY>
+        <locationX>162</locationX>
+        <locationY>254</locationY>
         <defaultConnectorLabel>QuoteNotAccepted</defaultConnectorLabel>
         <rules>
             <name>OrderActivatedAndQuoteAccepted</name>
@@ -150,8 +150,8 @@
     <recordCreates>
         <name>CreateWorkOrder</name>
         <label>CreateWorkOrder</label>
-        <locationX>801</locationX>
-        <locationY>255</locationY>
+        <locationX>816</locationX>
+        <locationY>77</locationY>
         <connector>
             <targetReference>CreateServiceApptFromWO</targetReference>
         </connector>
@@ -160,8 +160,8 @@
     <recordCreates>
         <name>GeServiceApptFromWO</name>
         <label>GeServiceApptFromWO</label>
-        <locationX>426</locationX>
-        <locationY>259</locationY>
+        <locationX>817</locationX>
+        <locationY>454</locationY>
         <connector>
             <targetReference>ServiceApptAndWorkOrderCreated</targetReference>
         </connector>
@@ -170,8 +170,8 @@
     <screens>
         <name>ServiceApptAndWorkOrderCreated</name>
         <label>ServiceApptAndWorkOrderCreated</label>
-        <locationX>221</locationX>
-        <locationY>259</locationY>
+        <locationX>584</locationX>
+        <locationY>461</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -186,8 +186,8 @@
     <screens>
         <name>Set_Service_Appt_Date</name>
         <label>Set Service Appt Date</label>
-        <locationX>654</locationX>
-        <locationY>73</locationY>
+        <locationX>402</locationX>
+        <locationY>261</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -223,7 +223,7 @@
             <targetReference>IsOrderActivated</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
     <variables>
         <name>AssociatedOrder</name>
         <dataType>SObject</dataType>

@@ -56,7 +56,7 @@
     </assignments>
     <description>The purpose of this Flow is to create Assets from Products defined on a Closed Quote. A key driver for this Flow is that once Products are sold they need to be tracked within the Service and Renewal lifecycle as well. Generating Products as Assets allows for multiple use cases around Asset Lifecycle Management to be engaged on. For more on the applicability of this Flow check out the Asset Lifecycle Management on the B2B Solution Architect Curriculum in either PLC or ACT.</description>
     <interviewLabel>CreateAssetsFromQuote {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>Create Assets From A Closed Quote</label>
+    <label>CreateAssetsFromQuote</label>
     <loops>
         <name>LoopQuoteItems</name>
         <label>LoopQuoteItems</label>
@@ -111,7 +111,7 @@
             <field>Id</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>$Flow.CurrentRecord</elementReference>
+                <elementReference>$Record.Id</elementReference>
             </value>
         </filters>
         <object>SBQQ__Quote__c</object>
@@ -191,7 +191,7 @@
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
     <variables>
         <name>AccountId</name>
         <dataType>String</dataType>
