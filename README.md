@@ -71,3 +71,32 @@ Now you’re ready to install the goodness of the Field Service Managed package 
 
 Install the FSL Managed Package: https://trailhead.salesforce.com/content/learn/projects/install-the-field-service-lightning-managed-package
 
+## Metadata To Add
+
+There are some additions you can make to make it easier to debug the flows
+* Add Work Order Related List to Account Page View
+* Add Pricebook Field to Work Order Page View
+* Add Product field to Work Order Line Item Page View
+* Activate Service Contracts within Entitlement Management Settings
+
+## Data Setup
+### Products
+The existing Product table data within this org will aid our use case around IT installation at a Hotel Conference Room. Product data utilized in the lab will be: Projector, Projector Ceiling Mount, Projector Screen, Smart US Power Strip, Stereo Speakers, 4K Monitor, 4K Video Camera, Camera Mount Microphone, Interior Keypad
+### Pricebook
+The existing Standard Pricebook will be utilized for this lab. We will modify pricing on a quote basis versus creating net new pricebooks. 
+### Accounts
+Since this is a brand new Trailhead org we will be utilizing some of the existing Account data within this. 
+### Customer Account
+This lab will utilize the Grand Hotels & Resorts Ltd account record for lab
+### Location Accounts
+This will lab will require a Location account record related to the Grand Hotels & Resorts Ltd account record
+### Maintenance Plans
+A key part of this course will be do we use a Maintenance Plan or not.  Maintenance Plans drive a lot of automation in relation to work orders created around Assets related to a customers Accounts. In this lab we will talk about both utilizing and not utilizing them. For the purposes of this lab, and the automation we will speak of, maintenance plans indicate a passive need for support where we will talk about active efforts of installation, replenishment and contract renewal. https://help.salesforce.com/articleView?id=sf.fs_create_maintenance.htm&type=5
+### Field Service Pricing Data Model
+A big part of this course is going to be the relationship between CPQ and Field Service. If you’ve set up a product catalog in Salesforce to track the goods and services your business offers, you can associate items in your price books with work orders and their line items, similar to the way you can associate products with opportunities or orders. If you specify a price book on a work order, this allows you to link each work order line item to a price book entry (product) from the price book. List price, discount, and quantity are defined at the line-item level.After a product is purchased and installed for a customer, it is typically tracked as an asset in Salesforce. The Asset lookup field on work orders and work order line items allows you to track work being performed on a specific asset. It also makes it possible to view a history of all work completed on the asset.If an asset is replaced or upgraded, the relationship between the old and new asset is tracked in an asset relationship record. An asset relationship lists a start and end time—for instance, if the replacement asset is being leased—and a relationship type, which must be defined by the admin. https://developer.salesforce.com/docs/atlas.en-us.field_service_dev.meta/field_service_dev/fsl_dev_soap_pricing.htm
+### Service Contracts
+To create Service Contracts then SLAs are required and for that Entitlement Management needs to be enabled within every org
+### Locations and Products Consumed in FSL
+We will not be creating any Location records as locations within Field Service could be locations that have nothing to do with customer locations. We will assume that all customer locations and addresses are contained within Account records. 
+### Orders with Order Products 
+We have a flow to create a Work Order and Service Appointment from an Order Record and Quotes will create Orders From standard Quote Functionality. Even then we will not be syncing Quote Line Items to Order Product data for a handful of reasons. First is there is different logic driving dates https://help.salesforce.com/articleView?id=sf.cpq_order_date_logic.htm&type=5. Second is the use of Order records may vary from organization to organization. 
