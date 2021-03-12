@@ -46,6 +46,17 @@ Even if you've recently signed up for a special CPQ-enabled Developer Edition or
 5. Complete your registration by setting your password and challenge question. *Tip*: Write down your username, password, and login URL for easy access later.
 6. You are logged in to your Developer Edition.
 
+## Update the CPQ Orgs Package To The Latest Release (Optional)
+
+The version of the “Salesforce CPQ” package that comes with the org above is a few releases old. While not required for the Lab you can also update the package. Here we are looking for the most recent release of the “Salesforce CPQ” managed package. 
+
+1. Open an incognito browser window in Chrome.
+2. In the incognito window, paste this link https://install.steelbrick.com/ into the address bar to install the managed package.
+3. Click the link to install the most recent managed package to your production org. For a business org, you may want to install new packages in a sandbox org first to test them. 
+4. On the Salesforce login screen, enter the username and password for your Labs org, then click *Log In*.
+5. Select *Install for Admins Only*, then click *Install*.
+6. Approve the request to grant access to third-party websites for geolocation and optimization services.
+7. Wait for a message telling you that you’ll be notified by email when the package is installed, and click *Done*. 
 ## Enable Field Service
 
 Before you can start working with Field Service, you must enable it.
@@ -58,18 +69,19 @@ Look at all the shiny new settings! For now, leave those settings alone—you ca
 
 ## Install the FSL Managed Package
 
-Now you’re ready to install the goodness of the Field Service Managed package right into your Trailhead playground. Salesforce regularly releases new versions of the Field Service managed package as part of their standard Spring, Summer, and Winter releases so it will be up-to-date.
+Now you’re ready to install the goodness of the Field Service Managed package right into your Labs. Salesforce regularly releases new versions of the Field Service managed package as part of their standard Spring, Summer, and Winter releases so it will be up-to-date. Here we are looking for the most recent release of the “Salesforce Field Service” managed package. 
 
 1. Open an incognito browser window in Chrome.
 2. In the incognito window, paste this link https://fsl.secure.force.com/install into the address bar to install the managed package.
-3. Click the link to install the most recent managed package to your Trailhead playground production org. For a business org, you may want to install new packages in a sandbox org first to test them. If you get an error message saying the managed package isn't yet available on your Trailhead playground, please try completing this project again in a few days.
-4. On the Salesforce login screen, enter the username and password for your Trailhead Playground, then click *Log In*.
+3. Click the link to install the most recent managed package to your production org. For a business org, you may want to install new packages in a sandbox org first to test them. 
+4. On the Salesforce login screen, enter the username and password for your Labs org, then click *Log In*.
 5. Select *Install for Admins Only*, then click *Install*.
 6. Approve the request to grant access to third-party websites for geolocation and optimization services.
-7. Wait for a message telling you that you’ll be notified by email when the package is installed, and click *Done*. Spend a few minutes doing something fabulous while you’re waiting for the email.
+7. Wait for a message telling you that you’ll be notified by email when the package is installed, and click *Done*. 
 
 
 Install the FSL Managed Package: https://trailhead.salesforce.com/content/learn/projects/install-the-field-service-lightning-managed-package
+
 
 ## Metadata To Add
 
@@ -100,3 +112,20 @@ To create Service Contracts then SLAs are required and for that Entitlement Mana
 We will not be creating any Location records as locations within Field Service could be locations that have nothing to do with customer locations. We will assume that all customer locations and addresses are contained within Account records. 
 ### Orders with Order Products 
 We have a flow to create a Work Order and Service Appointment from an Order Record and Quotes will create Orders From standard Quote Functionality. Even then we will not be syncing Quote Line Items to Order Product data for a handful of reasons. First is there is different logic driving dates https://help.salesforce.com/articleView?id=sf.cpq_order_date_logic.htm&type=5. Second is the use of Order records may vary from organization to organization. 
+
+## Service Cloud for Salesforce CPQ (Optional)
+
+Salesforce CPQ’s Service Cloud integration package provides sales contract features to Service Cloud users. When you enable the Service Cloud Integration package, Salesforce CPQ replaces contracts with service contracts and subscriptions with service contract line items.
+
+While we are not using this connector in this lab (it accommodates a lot of complex use cases we will not address in this labs) it can come in handy. This connector utilizes Apex Triggers and Classes and is also Managed where we will be creating Flows. For more on the packages capabilities go here: https://help.salesforce.com/articleView?id=sf.cpq_service_cloud_parent.htm&type=5
+
+The version of the “Service Cloud for Salesforce CPQ” package that comes with the org above is a few releases old. While not required for the Lab you can also update the package.  Here we are looking for the most recent release of the “Service Cloud for Salesforce CPQ” managed package. 
+
+1. Open an incognito browser window in Chrome.
+2. In the incognito window, paste this link https://install.steelbrick.com/ into the address bar to install the managed package.
+3. Click the link to install the most recent managed package to your production org. For a business org, you may want to install new packages in a sandbox org first to test them. 
+4. On the Salesforce login screen, enter the username and password for your Labs org, then click *Log In*.
+5. Select *Install for Admins Only*, then click *Install*.
+6. Approve the request to grant access to third-party websites for geolocation and optimization services.
+7. Wait for a message telling you that you’ll be notified by email when the package is installed, and click *Done*. 
+
