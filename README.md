@@ -67,7 +67,7 @@ Before you can start working with Field Service, you must enable it.
 
 Look at all the shiny new settings! For now, leave those settings alone—you can adjust them all you want after you finish the project.
 
-## Install the FSL Managed Package
+## Install the SFS Managed Package
 
 Now you’re ready to install the goodness of the Field Service Managed package right into your Labs. Salesforce regularly releases new versions of the Field Service managed package as part of their standard Spring, Summer, and Winter releases so it will be up-to-date. Here we are looking for the most recent release of the “Salesforce Field Service” managed package. 
 
@@ -117,7 +117,7 @@ We have a flow to create a Work Order and Service Appointment from an Order Reco
 
 Salesforce CPQ’s Service Cloud integration package provides sales contract features to Service Cloud users. When you enable the Service Cloud Integration package, Salesforce CPQ replaces contracts with service contracts and subscriptions with service contract line items.
 
-While we are not using this connector in this lab (it accommodates a lot of complex use cases we will not address in this labs) it can come in handy. This connector utilizes Apex Triggers and Classes and is also Managed where we will be creating Flows. For more on the packages capabilities go here: 9[https://help.salesforce.com/articleView?id=sf.cpq_service_cloud_parent.htm&type=5](https://help.salesforce.com/articleView?id=sf.cpq_service_cloud_parent.htm&type=5)
+While we are not using this connector in this lab (it accommodates a lot of complex use cases we will not address in this labs) it can come in handy. This connector utilizes Apex Triggers and Classes and is also Managed where we will be creating Flows. For more on the packages capabilities go here: [https://help.salesforce.com/articleView?id=sf.cpq_service_cloud_parent.htm&type=5](https://help.salesforce.com/articleView?id=sf.cpq_service_cloud_parent.htm&type=5)
 
 The version of the “Service Cloud for Salesforce CPQ” package that comes with the org above is a few releases old. While not required for the Lab you can also update the package.  Here we are looking for the most recent release of the “Service Cloud for Salesforce CPQ” managed package. 
 
