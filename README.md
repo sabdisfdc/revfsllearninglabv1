@@ -64,7 +64,7 @@ Before you can start working with Field Service, you must enable it.
 1. In your CPQ org , click  then select *Setup*.
 2. Enter field service in the Quick Find box, then select *Field Service Settings*.
 3. Click the toggle to enable Field Service.
-\4. If you make changes to the below settings Click Save
+4. If you make changes to the below settings Click Save
 
 Look at all the shiny new settings! For now, leave those settings alone—you can adjust them all you want after you finish the project.
 
