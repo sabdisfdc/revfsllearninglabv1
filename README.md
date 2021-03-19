@@ -83,6 +83,13 @@ Now you’re ready to install the goodness of the Field Service Managed package 
 
 Install the FSL Managed Package: [https://trailhead.salesforce.com/content/learn/projects/install-the-field-service-lightning-managed-package](https://trailhead.salesforce.com/content/learn/projects/install-the-field-service-lightning-managed-package)
 
+## Deploy this Codebase
+
+Thanks to Andrew Fawcett [@andyinthecloud](https://twitter.com/andyinthecloud) we have this incredible single click process to deploy the code in this Github repo to the org you just generated
+
+[https://githubsfdeploy.herokuapp.com/app/githubdeploy/b2bsolutionarchitectprogram/revfsllearninglabv1](https://githubsfdeploy.herokuapp.com/app/githubdeploy/b2bsolutionarchitectprogram/revfsllearninglabv1)
+
+To learn more about githubsfdeploy please check out his Github Repo: [https://github.com/afawcett/githubsfdeploy](https://github.com/afawcett/githubsfdeploy)
 
 ## Metadata To Add
 
