@@ -91,6 +91,8 @@ Thanks to Andrew Fawcett [@andyinthecloud](https://twitter.com/andyinthecloud) w
 
 To learn more about githubsfdeploy please check out his Github Repo: [https://github.com/afawcett/githubsfdeploy](https://github.com/afawcett/githubsfdeploy)
 
+While this is the easiest way to deploy you may choose other options. If so we recommend SFDX. 
+
 ## Metadata To Add
 
 There are some additions you can make to make it easier to debug the flows
