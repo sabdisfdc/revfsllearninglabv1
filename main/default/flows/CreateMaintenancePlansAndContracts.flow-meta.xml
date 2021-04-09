@@ -112,6 +112,41 @@
                 <elementReference>$System.OriginDateTime</elementReference>
             </value>
         </assignmentItems>
+        <assignmentItems>
+            <assignToReference>MaintenancePlan.Frequency</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>MaintenancePlan.NextSuggestedMaintenanceDate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>DateOfFirstWorkOrder</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>MaintenancePlan.GenerationTimeframe</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>MaintenancePlan.FrequencyType</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Years</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>MaintenancePlan.GenerationTimeframeType</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Years</stringValue>
+            </value>
+        </assignmentItems>
         <connector>
             <targetReference>Create_Maintenance_Plan</targetReference>
         </connector>
@@ -133,6 +168,11 @@
         </connector>
     </assignments>
     <description>In this flow we will be creating the following data: Service Contract, Maintenance Plan, Assets, and Maintenance Assets on the Maintenance Plans. We will not be creating Service Contract Line Items. Why is because the Products specified on your Quote may not constitute “Service” level support but all those products would be within the purview of a Maintenance Plan. If you *do* want to create Service Contracts from Assets there is the added wrinkle of Pricebook Entries. Pricebook Entries are not assigned to Assets but Service Contract Line Items also require Pricebook Entries.</description>
+    <formulas>
+        <name>DateOfFirstWorkOrder</name>
+        <dataType>Date</dataType>
+        <expression>{!$Flow.CurrentDate} + 30</expression>
+    </formulas>
     <interviewLabel>CreateMaintenancePlansAndContracts {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Create Maintenance Plans And Contracts</label>
     <loops>
@@ -231,6 +271,14 @@
         <connector>
             <targetReference>Generate_Service_Contract</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>QuoteId</elementReference>
+            </value>
+        </filters>
         <object>SBQQ__Quote__c</object>
         <outputAssignments>
             <assignToReference>QuoteId</assignToReference>
@@ -262,6 +310,8 @@
         <object>SBQQ__QuoteLine__c</object>
         <queriedFields>Id</queriedFields>
         <queriedFields>SBQQ__Product__c</queriedFields>
+        <queriedFields>Name</queriedFields>
+        <queriedFields>SBQQ__Quantity__c</queriedFields>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <screens>
@@ -311,7 +361,7 @@
         <name>AccountId</name>
         <dataType>String</dataType>
         <isCollection>false</isCollection>
-        <isInput>true</isInput>
+        <isInput>false</isInput>
         <isOutput>false</isOutput>
     </variables>
     <variables>
