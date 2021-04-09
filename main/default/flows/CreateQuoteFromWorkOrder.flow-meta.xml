@@ -149,7 +149,7 @@
         <expression>{!$Flow.CurrentDate}+30</expression>
     </formulas>
     <interviewLabel>CreateQuoteFromWorkOrder {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>CreateQuoteFromWorkOrder</label>
+    <label>Create Quote From Work Order</label>
     <loops>
         <name>Loop_Quote_Line_Items</name>
         <label>Loop Quote Line Items</label>
