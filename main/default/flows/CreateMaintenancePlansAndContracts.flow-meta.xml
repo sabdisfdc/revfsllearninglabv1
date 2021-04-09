@@ -342,7 +342,7 @@
         <name>MaintenancePlan</name>
         <dataType>SObject</dataType>
         <isCollection>false</isCollection>
-        <isInput>true</isInput>
+        <isInput>false</isInput>
         <isOutput>false</isOutput>
         <objectType>MaintenancePlan</objectType>
     </variables>
