@@ -109,7 +109,7 @@
             <assignToReference>MaintenancePlan.StartDate</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>$System.OriginDateTime</elementReference>
+                <elementReference>DateOfFirstWorkOrder</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
