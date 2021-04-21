@@ -36,6 +36,13 @@
                 <stringValue>Installed</stringValue>
             </value>
         </assignmentItems>
+        <assignmentItems>
+            <assignToReference>UpdateAsset.InstallDate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </assignmentItems>
         <connector>
             <targetReference>AddToCollection</targetReference>
         </connector>
