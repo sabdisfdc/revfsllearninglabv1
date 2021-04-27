@@ -132,7 +132,7 @@ While we are not using this connector in this lab (it accommodates a lot of comp
 The version of the “Service Cloud for Salesforce CPQ” package that comes with the org above is a few releases old. While not required for the Lab you can also update the package.  Here we are looking for the most recent release of the “Service Cloud for Salesforce CPQ” managed package. 
 
 1. Open an incognito browser window in Chrome.
-2. In the incognito window, paste this link [https://install.steelbrick.com/](https://install.steelbrick.com/) into the address bar to install the managed package.
+2. In the incognito window, paste this link.        [https://install.steelbrick.com/](https://install.steelbrick.com/) into the address bar to install the managed package.
 3. Click the link to install the most recent managed package to your production org. For a business org, you may want to install new packages in a sandbox org first to test them. 
 4. On the Salesforce login screen, enter the username and password for your Labs org, then click *Log In*.
 5. Select *Install for Admins Only*, then click *Install*.
