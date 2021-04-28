@@ -10,7 +10,7 @@ You will see a file within the repository called _config.yml. Its purpose is to 
 
 ## Learning Lab Videos
 
-Feel free to engage in the Learning Lab or simply take the repo here and work at your own pace. You will find videos related to the lab at our Video hub [here](https://b2bsa.hubs.vidyard.com/). 
+Feel free to engage in the Learning Lab or simply take the repo here and work at your own pace. You will find videos related to the lab at our Video hub [here](https://b2bsa.hubs.vidyard.com/watch/jig5YT9c7eXpmKoB324BmW). 
 
 ## Learning Lab Courses
 
