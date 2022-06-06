@@ -113,13 +113,6 @@
             </value>
         </assignmentItems>
         <assignmentItems>
-            <assignToReference>MaintenancePlan.Frequency</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <numberValue>1.0</numberValue>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
             <assignToReference>MaintenancePlan.NextSuggestedMaintenanceDate</assignToReference>
             <operator>Assign</operator>
             <value>
@@ -131,13 +124,6 @@
             <operator>Assign</operator>
             <value>
                 <numberValue>1.0</numberValue>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>MaintenancePlan.FrequencyType</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <stringValue>Years</stringValue>
             </value>
         </assignmentItems>
         <assignmentItems>
